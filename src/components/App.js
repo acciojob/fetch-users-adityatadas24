@@ -30,7 +30,7 @@ const App = () => {
         {/* Do not remove the main div */}
         <nav>
         <h3>Blue Whales</h3>
-        <button onClick={TableList}>Get User List</button>
+        <button className="btn" onClick={TableList}>Get User List</button>
       </nav>
      
         <table>
@@ -44,7 +44,7 @@ const App = () => {
             </tr>
             
           </thead>
-         {noDataFound && <h4>no data found on display</h4>}
+         {noDataFound && <h4>No data found on display.</h4>}
           <tbody >
             {user!=="" && (user.map((users) => (
               <tr  key={users.id}>
