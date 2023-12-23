@@ -46,7 +46,7 @@ const App = () => {
           </thead>
          {noDataFound && <h4>No data found on display.</h4>}
           <tbody >
-            {user!=="" && (user.map((users) => (
+            {user && (user.map((users) => (
               <tr  key={users.id}>
             
                 <td className="tbody">{users.first_name}</td>
