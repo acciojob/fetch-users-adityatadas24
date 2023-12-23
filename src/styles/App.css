@@ -1,1 +1,29 @@
+nav{
+    display: flex;
+  align-items: center;
+  }
+  nav button{
+ margin-left: 250px;
+ background-color: rgb(19, 171, 171);
+ border: none;
+ border-radius: 5px;
+ padding: 5px;
+ color: #fff;
+  
+  }
 
+  .thead{
+    background-color: black;
+    color: #fff;
+    border: none !important;
+    
+  }
+  .thead tr th{
+    padding: 25px;
+    padding-left: 60px !important;
+    padding-right:60px !important;
+    
+  }
+  .tbody{
+    border-bottom: 1px solid black !important;
+  }
