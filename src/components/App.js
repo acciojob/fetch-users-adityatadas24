@@ -46,7 +46,7 @@ const App = () => {
           </thead>
          {noDataFound && <h4>No data found on display.</h4>}
           <tbody >
-            {user && (user.map((users) => (
+            {user.length>0 && (user.map((users) => (
               <tr  key={users.id}>
             
                 <td className="tbody">{users.first_name}</td>
@@ -54,7 +54,7 @@ const App = () => {
                 <td className="tbody">{users.last_name}</td>
                 <td className="tbody">{users.email}</td>
                 <td className="tbody">
-                  <img src={users.avatar} alt={user.first_name} />
+                  <img src={users.avatar} alt={user.first_name+ " " + user.last_name} />
                 </td>
                 
               </tr>
